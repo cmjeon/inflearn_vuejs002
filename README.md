@@ -71,4 +71,9 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 
 # 인스턴스 옵션 속성
 - new Vue ({el:, template:, data:, methods:, created:, watch:, ...})로 객체 리터럴로 표현
-- 
+
+# 컴포넌트 소개
+- 화면을 영역별로 구분해서 개발할 수 있는 뷰의 기능이 컴포넌트
+- 컴포넌트를 사용하며 코드 재사용성이 올라가고 빠르게 화면을 제작할 수 있음
+
+# [실습 안내] 컴포넌트 등록 및 실습
