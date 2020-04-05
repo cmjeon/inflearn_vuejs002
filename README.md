@@ -36,7 +36,7 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 - Playgound-complete > web-dev.html 참조
 - 에디터에서 
   shift + ! #html 폼 자동생성
-  div@app #<div id='app'></div> 생성
+  div@app 으로 <div id='app'></div> 생성
 - HTML은 문서의 구조(DOM)를 나타내고, Javascript는 DOM을 조작하는 역할임
 - Javascript에서는 변수의 내용이 변경되면 변수를 DOM에 반드시 대입해줘야 함
 
@@ -50,3 +50,24 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 - Object.defineProperty(viewModel, 'str') { set() } Function 은 해당 값에 할당할 때
 
 # Reactivity 코드 라이브러리화 하기
+- 즉시 실행 함수 표현(IIFE, Immediately Invoked Function Expression)
+- https://webcoding.tistory.com/154 참고
+- 즉시 실행 함수 표현이란 함수를 선언함과 동시에 즉시 실행되는 함수를 나타냄. 즉시 실행 함수는 코드가 실행될 때 딱 한 번만 실행되며 그 후에는 다시 호출할 수 없음. 그렇기 때문에 초기화 기능으로 사용함
+즉시 실행 함수의 사용 이유
+- 자바스크립트에서 전역 공간에 수많은 변수를 선언하다 보면 변수명이 겹쳐서 프로그램에 문제가 생기거나 혼란을 야기할 수 있는데, 이러한 문제점을 즉시 실행 함수를 이용하여 방지가능
+
+# Hello Vue.js와 뷰 개발자 도구
+- 크롬 개발자 도구에서 Vue 탭으로 가면 Vue의 디버깅이 가능
+- data를 수정하면 화면에서 즉시 변경되는 것 확인가능
+
+# 인스턴스 소개
+- new Vue()를 이용해 인스턴스 생성가능
+- vue script 도입
+- el 속성으로 id를 선언하면 해당 id를 가진 태그를 찾아서 인스턴스를 부착함
+- el로 부착한 인스턴스를 통해서만 인스턴스 사용가능
+
+# 인스턴스와 생성자 함수
+- 뷰 인스턴스를 생성자 함수로 만드는 이유? : Vue 인스턴스에 대해 미리 다 정의해놓고 재사용만 할 수 있음
+
+# 인스턴스 옵션 속성
+- 
