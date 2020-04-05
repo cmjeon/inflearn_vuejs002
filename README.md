@@ -82,3 +82,7 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 
 # [실습 풀이] 전역 컴포넌트 등록
 - 
+
+# 지역 컴포넌트 등록
+- 지역컴포넌트는 Vue 객체안에 components 속성을 통해 생성
+- components : {'컴포넌트 이름','컴포넌트 내용'}
