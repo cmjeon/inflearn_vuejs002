@@ -70,4 +70,5 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 - 뷰 인스턴스를 생성자 함수로 만드는 이유? : Vue 인스턴스에 대해 미리 다 정의해놓고 재사용만 할 수 있음
 
 # 인스턴스 옵션 속성
+- new Vue ({el:, template:, data:, methods:, created:, watch:, ...})로 객체 리터럴로 표현
 - 
