@@ -96,7 +96,21 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 - 지역컴포넌트는 인스턴스 내부에서 선언하지 않으면 사용불가
 
 # 컴포넌트 통신
+- 데이터 전달 방법
 - 상위 > 하위 : props 전달
-- 하위 > 상위 : 이벤트 발생
+- 하위 > 상위 : event 발생
 
 # 컴포넌트 통신 규칙이 필요한 이유
+- 컴포넌트 간의 규칙이 없이 통신하는 경우 데이터의 변화에 따른 원인을 찾기 어려움
+- 따라서 데이터는 상위에서 하위로 props를 전달하고, 하위에서 상위는 이벤트를 발생시킴
+
+# props 속성
+- playground/props.html 참조
+- app에 data 속성에 message 선언
+- app-header의 props 속성에 propsdata1 선언
+- app-header 에 v-bind:props 속성 이름="상위 컴포넌트의 데이터이름 추가
+- ex) v-bind:propsdata1="message"
+
+# props 속성의 특징
+- 하위 컴포넌트의 props 속성은 reactivity가 적용됨
+- 상위 컴포넌트의 data를 바꾸면 하위 컴포넌트에도 적용됨
