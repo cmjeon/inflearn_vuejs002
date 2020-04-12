@@ -11,21 +11,28 @@
     <div id="app">
         <!-- <app-header v-bind:props 속성 이름="상위 컴포넌트의 데이터이름"></app-header> -->
         <app-header v-bind:propsdata1="message"></app-header>
+        <app-content v-bind:propsnum1="num"></app-content>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         var appHeader = {
-            template: '<h1>header</h1>',
+            template: '<h1>{{propsdata1}}</h1>',
             props: ['propsdata1']
+        }
+        var appContent = {
+            template: '<div>{{propsnum1}}</div>',
+            props: ['propsnum1']
         }
 
         new Vue({
             el: '#app',
             components: {
-                'app-header': appHeader
+                'app-header': appHeader,
+                'app-content': appContent
             },
             data: {
-                message: 'h1'
+                message: 'h1',
+                num:10
             }
         })
     </script>

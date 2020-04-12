@@ -114,3 +114,8 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 # props 속성의 특징
 - 하위 컴포넌트의 props 속성은 reactivity가 적용됨
 - 상위 컴포넌트의 data를 바꾸면 하위 컴포넌트에도 적용됨
+
+# [실습 안내] props 속성 실습
+- playgound/props.html
+
+# [실습 풀이] props 속성 실습 풀이
