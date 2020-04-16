@@ -9,6 +9,8 @@
     <div id="app">
         <!-- <app-header v-on:하위 컴포넌트에서 발생한 이벤트 이름="상위 컴포넌트의 메서드 이름"></app-header> -->
         <app-header v-on:do-event="logText"></app-header>
+        <app-content v-on:do-add="addNum"></app-content>
+        {{num}}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
@@ -20,18 +22,37 @@
                 }
             }
         }
+        var appContent = {
+            template: '<button v-on:click="addNumber(num)">add</button>',
+            methods: {
+                addNumber: function() {
+                    this.$emit('do-add');
+                }
+            },
+            data: {
+                num:2
+            }
+        }
         new Vue({
             el:'#app',
             data:{
 
             },
             components:{
-                'app-header':appHeader
+                'app-header':appHeader,
+                'app-content':appContent
             },
             methods: {
                 logText: function(){
                     console.log('hi');
+                },
+                addNum: function(n) {
+                    console.log(n);
+                    this.num = this.num + 1;
                 }
+            },
+            data: {
+                num:10
             }
         });
     </script>
