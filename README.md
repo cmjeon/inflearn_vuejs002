@@ -119,3 +119,15 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 - playgound/props.html
 
 # [실습 풀이] props 속성 실습 풀이
+
+# event emit
+
+# [실습 안내] event emit 실습 안내
+
+# [실습 풀이] event emit 실습 풀이
+
+# 뷰 인스턴스에서의 this
+- https://www.w3schools.com/js/js_this.asp
+- https://medium.com/better-programming/understanding-the-this-keyword-in-javascript-cb76d4c7c5e8
+
+# 컴포넌트 통신 방법 - 응용

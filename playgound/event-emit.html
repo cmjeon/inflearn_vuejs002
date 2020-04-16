@@ -29,14 +29,16 @@
                     this.$emit('do-add');
                 }
             },
-            data: {
-                num:2
+            data: function() {
+                return {
+                    num:2
+                }
             }
         }
-        new Vue({
+        var vm = new Vue({
             el:'#app',
-            data:{
-
+            data: function() {
+                return {}
             },
             components:{
                 'app-header':appHeader,
