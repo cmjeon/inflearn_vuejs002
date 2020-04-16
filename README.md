@@ -130,4 +130,11 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 - https://www.w3schools.com/js/js_this.asp
 - https://medium.com/better-programming/understanding-the-this-keyword-in-javascript-cb76d4c7c5e8
 
-# 컴포넌트 통신 방법 - 응용
+# 같은 컴포넌트 레벨 간의 통신 방법
+- 상하위 관계가 아닌 같은 레벨의 컴포넌트간의 통신방법
+- Root
+|- AppHeader
+`- AppContent
+
+# 같은 컴포넌트 레벨 간의 통신 방법 구현1
+- AppContent >(event)> Root >(props)> AppHeader
