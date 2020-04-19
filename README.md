@@ -138,3 +138,15 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 
 # 같은 컴포넌트 레벨 간의 통신 방법 구현1
 - AppContent >(event)> Root >(props)> AppHeader
+
+# 같은 컴포넌트 레벨 간의 통신 방법 구현2
+
+# 뷰 라우터 소개와 설치
+- Vue Router : 싱글 페이지 애플리케이션 구현에 사용하는 라이브러리
+- vue.js의 공식 라이브러리
+
+# 뷰 라우터 인스턴스 연결 및 초기 상태 안내
+- playgound/router.html
+- Router 생성 후 Vue에 router를 주입
+
+
