@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script>
@@ -14,7 +16,7 @@
             template: '<div>login</div>'
         }
         var MainComponent = {
-            template: '<div>main</div>'
+            template: '<div>Main</div>'
         }
         var myRouter = new VueRouter({
             // 페이지의 라우팅 정보
@@ -31,7 +33,7 @@
                     component: MainComponent
                 }
             ]
-        })
+        });
         new Vue({
             el:'#app',
             router: myRouter
