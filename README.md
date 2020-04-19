@@ -1,3 +1,5 @@
+# markdown 사용법
+- https://gist.github.com/ihoneymon/652be052a0727ad59601
 # learn-vue-js
 인프런 Vue.js 시작하기 - Age of Vue.js 강좌 학습자료
 https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
@@ -148,24 +150,24 @@ https://www.inflearn.com/course/Age-of-Vuejs/lecture/21333
 # 뷰 라우터 인스턴스 연결 및 초기 상태 안내
 - playgound/router.html
 - Router 생성 후 Vue에 router를 주입
-<pre><code>
+```
 new Vue({
   el:'#app',
   router: myRouter
 });
-</code></pre>
+```
 
 # 라우터가 표시되는 영역 및 router-view 태그 설명
-<pre><code>
+```
 <router-view></router-view>
-</code></pre>
+```
 
 # 링크를 이용한 페이지 이동 및 router-link 태그 설명
-<pre><code>
+```
 <router-link to="/login">Login</router-link>
-</code></pre>
+```
 
 # 라우터 정리 및 학습 방향 안내
-
+- https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/
 
 
